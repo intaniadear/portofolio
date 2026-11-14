@@ -9,7 +9,7 @@ Situs web portofolio profesional untuk **Intania Dea Ramadhani, S.E.** — *Fina
 - **Nama Lengkap**: Intania Dea Ramadhani, S.E.
 - **Domisili**: Duren Sawit, Jakarta Timur, DKI Jakarta
 - **Kontak**: 
-  - WhatsApp / Telepon: `+62 895-4227-19705`
+  - WhatsApp / Telepon: 
   - Email: `intaniadear@gmail.com`
   - LinkedIn: `https://www.linkedin.com/in/intaniadearamadhani`
 - **Pendidikan**:
