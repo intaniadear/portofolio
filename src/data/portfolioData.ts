@@ -8,16 +8,17 @@ import {
   SkillCategory,
   OperationalCaseStudy,
 } from '../types/portfolio';
+import { decodeData, OBFUSCATED_CONTACTS } from '../utils/obfuscate';
 
 export const personalInfo: PersonalInfo = {
   name: 'Intania Dea',
   fullName: 'Intania Dea Ramadhani, S.E.',
   title: 'Finance, Accounting & Administration Professional',
   headline: 'Mengelola operasional keuangan multi-entitas, rekonsiliasi data, dan kepatuhan administrasi bisnis dengan presisi tinggi.',
-  location: 'Duren Sawit, Jakarta Timur, DKI Jakarta',
-  phone: '+62 895-4227-19705',
-  whatsappUrl: 'https://wa.me/62895422719705',
-  email: 'intaniadear@gmail.com',
+  location: 'Jakarta Timur, DKI Jakarta',
+  phone: decodeData(OBFUSCATED_CONTACTS.phoneDisplay),
+  whatsappUrl: `https://wa.me/${decodeData(OBFUSCATED_CONTACTS.whatsappNumber)}`,
+  email: decodeData(OBFUSCATED_CONTACTS.email),
   linkedin: 'https://www.linkedin.com/in/intaniadearamadhani',
   status: 'Terbuka untuk Peluang Karier & Kolaborasi Profesional',
   aboutParagraphs: [

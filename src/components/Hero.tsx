@@ -56,13 +56,17 @@ export const Hero: React.FC = () => {
                 <ArrowDown className="w-4 h-4 text-primary" />
               </a>
 
-              <a
-                href={`mailto:${personalInfo.email}`}
-                className="inline-flex items-center gap-2 px-4 py-3 rounded-full border border-border/80 bg-surface-subtle hover:bg-surface text-typography-body hover:text-typography-heading font-medium text-xs transition-all"
+              <button
+                type="button"
+                onClick={() => {
+                  window.location.href = `mailto:${personalInfo.email}`;
+                }}
+                className="inline-flex items-center gap-2 px-4 py-3 rounded-full border border-border/80 bg-surface-subtle hover:bg-surface text-typography-body hover:text-typography-heading font-medium text-xs transition-all cursor-pointer"
+                aria-label="Kirim Email ke Intania"
               >
                 <Mail className="w-4 h-4 text-typography-muted" />
                 <span>{personalInfo.email}</span>
-              </a>
+              </button>
             </div>
           </div>
 
